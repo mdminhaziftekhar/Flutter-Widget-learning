@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/screens/alert_dialogue.dart';
+import 'package:flutter_learning/screens/animated_container.dart';
 import 'package:flutter_learning/screens/table.dart';
 
 void main() {
@@ -32,6 +34,6 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return TableWidget();
+    return AnimatedContainerScreen();
   }
 }

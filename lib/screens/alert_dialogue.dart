@@ -26,6 +26,9 @@ class _AlertDialogueState extends State<AlertDialogue> {
                     child: const Text("close"),
                   ),
                 ],
+                title: const Text('Minhaz'),
+                contentPadding: const EdgeInsets.all(20.0),
+                content: const Text('This is the Alert Dialog'),
               ),
             );
           },
