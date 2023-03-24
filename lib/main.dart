@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_learning/screens/alert_dialogue.dart';
 import 'package:flutter_learning/screens/animated_container.dart';
+import 'package:flutter_learning/screens/animated_icon.dart';
 import 'package:flutter_learning/screens/autocomplete.dart';
 import 'package:flutter_learning/screens/cardScreen.dart';
 import 'package:flutter_learning/screens/datepicker.dart';
@@ -44,6 +45,6 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return FormScreen();
+    return AnimatedIconScreen();
   }
 }
