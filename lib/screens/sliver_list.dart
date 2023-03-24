@@ -14,12 +14,17 @@ class SliverListScreen extends StatelessWidget {
           SliverList(
             
             delegate: SliverChildBuilderDelegate((context, index) {
-              return ListTile(
-
-                title: Text('Item ${index + 1}'),
-                tileColor: Colors.orange[100 * (index % 9 + 1)],
+              return Card(
+              margin: const EdgeInsets.all(5.0),
+                child: ListTile(
+              
+                  title: Text('Item ${index + 1}'),
+                  tileColor: Colors.orange[100 * (index % 9 + 1)],
+                ),
               );
-            }),
+            },
+              childCount: 200,
+            ),
           ),
         ],
       ),
