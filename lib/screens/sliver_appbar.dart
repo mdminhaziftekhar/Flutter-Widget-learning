@@ -11,9 +11,16 @@ class SliverAppbarScreen extends StatelessWidget {
         slivers: [
           SliverAppBar(
             backgroundColor: Colors.deepPurple,
-            leading: Icon(Icons.menu),
             title: Text('S L I V E R A P P B A R'),
+            leading: Icon(Icons.menu),
             expandedHeight: 300,
+            floating: true,
+            flexibleSpace: FlexibleSpaceBar(
+              background: Container(
+                color: Colors.red,
+              ),
+              title: Text('S L I V E R A P P B A R'),
+            ),
           ),
           SliverToBoxAdapter(
             child: Padding(
