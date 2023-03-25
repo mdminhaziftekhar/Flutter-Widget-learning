@@ -21,6 +21,7 @@ import 'package:flutter_learning/screens/sliver_appbar.dart';
 import 'package:flutter_learning/screens/sliver_grid.dart';
 import 'package:flutter_learning/screens/sliver_list.dart';
 import 'package:flutter_learning/screens/stepper.dart';
+import 'package:flutter_learning/screens/tab_page_selector.dart';
 import 'package:flutter_learning/screens/table.dart';
 import 'package:flutter_learning/screens/timepicker.dart';
 
@@ -54,6 +55,6 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return const StepperScreen();
+    return const TabPageSelectorScreen();
   }
 }
