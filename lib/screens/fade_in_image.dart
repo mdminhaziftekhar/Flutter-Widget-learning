@@ -15,10 +15,13 @@ class _FadeInImageScreenState extends State<FadeInImageScreen> {
         title: Text('Fade in image screen'),
       ),
       body: Center(
-        child: FadeInImage(
-          placeholder: AssetImage('assets/images/minhaz.jpg'),
-          image: NetworkImage(
-              'https://i.pinimg.com/736x/43/01/2a/43012a69516821c97de2ad4a62e3d2b4.jpg'),
+        child: Hero(
+          tag: 'tag-1',
+          child: FadeInImage(
+            placeholder: AssetImage('assets/images/minhaz.jpg'),
+            image: NetworkImage(
+                'https://i.pinimg.com/736x/43/01/2a/43012a69516821c97de2ad4a62e3d2b4.jpg'),
+          ),
         ),
       ),
     );
