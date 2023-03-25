@@ -20,6 +20,7 @@ import 'package:flutter_learning/screens/popupmenu.dart';
 import 'package:flutter_learning/screens/sliver_appbar.dart';
 import 'package:flutter_learning/screens/sliver_grid.dart';
 import 'package:flutter_learning/screens/sliver_list.dart';
+import 'package:flutter_learning/screens/stepper.dart';
 import 'package:flutter_learning/screens/table.dart';
 import 'package:flutter_learning/screens/timepicker.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: const MyWidget(),
     );
@@ -53,6 +54,6 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return const IndexedStackScreen();
+    return const StepperScreen();
   }
 }
