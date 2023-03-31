@@ -17,6 +17,7 @@ import 'package:flutter_learning/screens/future_builder.dart';
 import 'package:flutter_learning/screens/hero.dart';
 import 'package:flutter_learning/screens/indexed_stack.dart';
 import 'package:flutter_learning/screens/popupmenu.dart';
+import 'package:flutter_learning/screens/riverpod.dart';
 import 'package:flutter_learning/screens/sliver_appbar.dart';
 import 'package:flutter_learning/screens/sliver_grid.dart';
 import 'package:flutter_learning/screens/sliver_list.dart';
@@ -24,9 +25,10 @@ import 'package:flutter_learning/screens/stepper.dart';
 import 'package:flutter_learning/screens/tab_page_selector.dart';
 import 'package:flutter_learning/screens/table.dart';
 import 'package:flutter_learning/screens/timepicker.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ProviderScope(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -55,6 +57,6 @@ class MyWidget extends StatefulWidget {
 class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
-    return const TabPageSelectorScreen();
+    return StateNotifierScreen();
   }
 }

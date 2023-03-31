@@ -17,7 +17,7 @@ class _PopUpMenuScreenState extends State<PopUpMenuScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('practice'),
+          title: const Text('practice'),
         ),
         body: ListTile(
           title: Text(title),
